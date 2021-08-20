@@ -1,0 +1,46 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  font-family: $font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  background-image: url("../../images/pattern-background-desktop.svg");
+  background-size: cover;
+  background-color: $paleblue;
+  background-repeat: no-repeat;
+}
+
+.black {
+  font-weight: $black;
+}
+
+.attribution {
+  position: absolute;
+  left: 50%;
+  font-size: 10px;
+  text-align: center;
+  padding-top: 4em;
+  font-family: $font;
+  transform: translateX(-50%);
+}
