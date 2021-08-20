@@ -36,7 +36,7 @@
   &__content {
     display: flex;
     flex-direction: column;
-    padding-bottom: 20px;
+    padding-bottom: 24px;
 
     .plan {
       display: flex;
@@ -73,6 +73,15 @@
         color: $brightblue;
         font-weight: $bold;
         font-size: 12px;
+        cursor: pointer;
+        -webkit-transition: color 200ms linear;
+        -ms-transition: color 200ms linear;
+        transition: color 200ms linear;
+
+        &:hover {
+          text-decoration: none;
+          color: $activeblue;
+        }
       }
     }
   }
@@ -81,6 +90,7 @@
 .primary {
   background-color: $brightblue;
   color: white;
+  text-align: center;
   font-size: 15px;
   font-weight: $bold;
   margin: 0 24px;
@@ -89,18 +99,37 @@
   border-radius: 10px;
   -webkit-box-shadow: 0px 18px 31px -6px rgba(56, 41, 224, 0.3);
   box-shadow: 0px 18px 31px -6px rgba(56, 41, 224, 0.3);
+  transition: all 1ms ease-in;
+  cursor: pointer;
+  -webkit-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+
+  &:hover {
+    background-color: $activeblue;
+  }
 }
 
 .secondary {
   background-color: transparent;
-  color: $darkblue;
+  display: block;
+  text-align: center;
+  color: $paleblue;
   font-size: 15px;
   font-weight: $bold;
-  margin: 0 24px;
-  padding: 20px;
-  padding-top: 24px;
+  margin: 0 auto;
+  margin-top: 24px;
+  margin-bottom: 0;
   border: none;
   border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: color 200ms linear;
+  -ms-transition: color 200ms linear;
+  transition: color 200ms linear;
+
+  &:hover {
+    color: $darkblue;
+  }
 }
 
 @media (min-width: 460px) {
@@ -121,9 +150,10 @@
       }
     }
     &__content {
+      padding-bottom: 48px;
   
       .plan {
-        margin: 24px 48px;
+        margin: 28px 48px;
         padding: 24px;
         font-size: 16px;
   
@@ -143,12 +173,8 @@
     margin: 0 48px;
     padding: 16px;
   }
-  
+
   .secondary {
-    font-size: 15px;
-    margin: 0 48px;
-    padding: 20px;
-    padding-top: 28px;
-    padding-bottom: 34px;
+    margin-top: 30px;
   }
 }
